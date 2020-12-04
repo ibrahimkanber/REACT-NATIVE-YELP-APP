@@ -17,10 +17,13 @@ export default CityItem;
 const styles = StyleSheet.create({
     container: {
         padding: 10,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor:"rgb(47, 40, 51)",
+        color:"white"
     },
     text: {
         fontSize: 20,
-        fontWeight: '300'
+        fontWeight: '300',
+        color:"white"
     }
 })

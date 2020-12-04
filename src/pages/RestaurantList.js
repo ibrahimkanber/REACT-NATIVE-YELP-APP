@@ -62,6 +62,7 @@ console.log(selectedCity)
            
             <SearchBar
             onSearch={val=>searchRestaurants(val)}
+            placeholder="Search a restaurant..."
             />
             <FlatList
             data={restaurantList}

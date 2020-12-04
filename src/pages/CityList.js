@@ -37,7 +37,7 @@ const CityList = (props) => {
         )
     }
 
-    const renderSeperator=()=><View style={{borderWidth:1,borderColor:"#e0e0e0"}}></View>
+    const renderSeperator=()=><View style={{borderWidth:2,borderColor:"rgb(36, 105, 145)"}}></View>
 
     function searchCity(search){
         const filteredCity=originalList.filter(city=>{
@@ -54,6 +54,7 @@ const CityList = (props) => {
             <SearchBar 
             placeholder="Search a city..."
             onSearch={(value)=>searchCity(value)}
+
             />
             <FlatList
                 data={cityList}

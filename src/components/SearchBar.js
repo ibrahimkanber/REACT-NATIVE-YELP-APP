@@ -5,7 +5,7 @@ import {View,Text,TextInput,StyleSheet} from "react-native";
 const Searchbar=(props)=>{
     return(
         <View style={styles.container} >
-            <TextInput onChangeText={(val)=>props.onSearch(val)} placeholder="Search a Restaurant.." />
+            <TextInput onChangeText={(val)=>props.onSearch(val)} placeholder={props.placeholder} style={{fontSize:18}}/>
         </View>
     )
 }
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#e0e0e0',
         margin: 5,
         padding: 5,
-        borderRadius: 5
+        borderRadius: 5,
+      
     }
 })
